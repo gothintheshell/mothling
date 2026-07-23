@@ -1,0 +1,16 @@
+{{ define "main" }}
+  {{ if site.Params.features.show_hero }}
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>{{ site.Title }}</h1>
+      <p>{{ site.Params.description }}</p>
+    </div>
+    <img src="{{ site.Params.features.hero_image }}" alt="A multi-row black metal altar with white burning candles" class="hero-bg">
+  </section>
+  {{ end }}
+
+  <article class="content-wrapper">
+    {{ .Content }}
+  </article>
+{{ end }}

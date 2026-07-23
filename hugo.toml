@@ -1,0 +1,86 @@
+baseURL = 'https://astral-snails.local/' # Change this to your real domain later
+title = "mothling?!"
+theme = ""
+
+paginate = 5
+
+[security]
+  enableInlineShortcodes = false
+  [security.exec]
+    allow = ['^dart-sass-embedded$', '^gosss$', '^hugo$']
+    osEnv = ['(?i)^((HTTPS?|NO)_PROXY|PATH|GO(111)?MODULE)$']
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[menus]
+  [[menus.main]]
+    name = "Home"
+    pageRef = "/"
+    weight = 10
+  [[menus.main]]
+    name = "Blog"
+    pageRef = "/blog"
+    weight = 20
+  [[menus.main]]
+    name = "Collections"
+    pageRef = "/lists"
+    weight = 30
+  [[menus.main]]
+    name = "Flutterlings"
+    pageRef = "/writing"
+    weight = 40
+
+[params]
+  description = "A digital hollow filled with dreams and flutterings drawn to the light"
+  author = "mothling"
+  
+  [params.colors]
+    bg_primary = "#242629"
+    bg_secondary = "#2d2d2d"
+    text_primary = "#cfbbe3"
+    text_secondary = "#9e8fb5"
+    accent_muted = "#5c4066"
+    accent_bright = "#8a6fa0"
+    border_color = "#444444"
+
+  [params.typography]
+    font_body = '"Roboto Mono", monospace'
+    font_heading = '"Bitcount Prop", monospace' #NEED TO UPDATE
+    
+  [params.features]
+    show_hero = true
+    hero_image = "/images/white-burning-candles.jpg"
+
+[privacy]
+
+  [privacy.googleAnalytics]
+    disable = true
+    respectDoNotTrack = true
+
+  [privacy.vimeo]
+    disabled = false
+    simple = true
+
+  [privacy.x]
+    disabled = false
+    enableDNT = true
+    simple = true
+
+  [privacy.instagram]
+    disabled = false
+    simple = true
+
+  [privacy.youtube]
+    disabled = false
+    privacyEnhanced = true
+
+[services]
+
+  [services.instagram]
+    disableInlineCSS = true
+
+  [services.x]
+    disableInlineCSS = true

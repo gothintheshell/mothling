@@ -1,0 +1,15 @@
+<header class="site-header">
+  <!-- 1. Title FIRST (Left) -->
+  <div class="site-branding">
+    <h1 class="site-title">{{ site.Title }}</h1>
+  </div>
+
+  <!-- 2. Nav SECOND (Right) -->
+  <nav class="site-nav">
+    <ul class="nav-list">
+      {{ range site.Menus.main }}
+        <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+      {{ end }}
+    </ul>
+  </nav>
+</header>

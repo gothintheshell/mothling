@@ -1,0 +1,39 @@
+{{ define "main" }}
+  <section class="list-section-{{ .Type }}">
+    <article class="content-wrapper">
+      <header class="page-header">
+        <h1>{{ .Title }}</h1>
+        {{ with .Description }}
+          <p class="lead">{{ . }}</p>
+        {{ end }}
+      </header>
+
+      <div class="post-list">
+        {{ range .Pages }}
+          <article class="post-card">
+            <header class="post-meta">
+              <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 January 2006" }}</time>
+            </header>
+            
+            <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+            
+            <div class="post-excerpt">
+              {{ .Summary }}
+              {{ if .Truncated }}
+                <a href="{{ .RelPermalink }}" class="read-more">Read Entry →</a>
+              {{ end }}
+            </div>
+
+            {{ if .Params.tags }}
+              <div class="post-tags">
+                {{ range .Params.tags }}
+                  <a href="/tags/{{ . | urlize }}/" class="tag">#{{ . }}</a>
+                {{ end }}
+              </div>
+            {{ end }}
+          </article>
+        {{ end }}
+      </div>
+    </article>
+  </section>
+{{ end }}

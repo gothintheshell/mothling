@@ -1,0 +1,478 @@
+/* --- Variables & Theme --- */
+:root {
+  --bg-primary: #242629;
+  --bg-secondary: #2d2d2d;
+  --text-primary: #cfbbe3;
+  --text-secondary: #9e8fb5;
+  --accent-muted: #b99bd8;
+  --accent-bright: #d4c4f0;
+  --border-color: #8c8c8c;
+  
+  --font-heading: 'Megrim', 'Arial Narrow', sans-serif;
+  --font-body: 'Roboto Mono', 'Courier New', monospace;
+  --font-accent: 'Bruno Ace', cursive;
+
+  --bg-collection-card: rgba(109, 76, 255, 0.12);
+  --border-collection-card: rgba(185, 155, 216, 0.4);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--accent-muted);
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  line-height: 1.2;
+}
+
+.site-title {
+  font-family: var(--font-heading);
+  color: var(--accent-muted);
+  font-size: 1.8rem;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+p {
+  margin-bottom: 1.5em;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  background-color: var(--bg-secondary);
+  border-bottom: 1px solid var(--border-color);
+  width: 100%;
+}
+
+.site-nav {
+  flex: 1; 
+  display: flex;
+  justify-content: flex-end;
+}
+
+.site-branding {
+  flex: 0 0 auto;
+  text-align: right;
+}
+
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-list a:hover {
+  color: var(--accent-bright);
+}
+
+/* Main Hero Section */
+.hero {
+  position: relative;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  text-align: center;
+}
+
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+  opacity: 0.6;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(36, 38, 41, 0.7), rgba(36, 38, 41, 0.9));
+  z-index: -1;
+}
+
+.hero-content {
+  z-index: 1;
+  max-width: 800px;
+  padding: 2rem;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+  color: var(--accent-bright);
+}
+
+.hero-content p {
+  font-size: 1.25rem;
+  color: var(--text-primary);
+}
+
+.content-wrapper {
+  max-width: 800px;
+  margin: 4rem auto;
+  padding: 0 2rem;
+}
+
+.site-footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: var(--bg-secondary);
+  border-top: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.site-footer a {
+  color: var(--accent-bright);
+  text-decoration: none;
+}
+
+.hugo-badge {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  margin-top: 1rem;
+  font-family: var(--font-body);
+}
+
+.hugo-badge a {
+  color: var(--accent-muted);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.hugo-badge a:hover {
+  color: var(--accent-bright);
+  text-decoration: underline;
+}
+
+.post-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.post-card {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  padding: 2rem;
+  border-radius: 4px;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.post-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent-muted);
+}
+
+.post-meta time {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.post-card h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.post-card h2 a {
+  color: var(--text-primary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.post-card h2 a:hover {
+  color: var(--accent-bright);
+}
+
+.post-excerpt {
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.read-more {
+  color: var(--accent-bright);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+.post-tags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.tag {
+  background-color: var(--bg-primary);
+  color: var(--accent-muted);
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  border: 1px solid var(--border-color);
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.2s ease;
+}
+
+/* 404 Page Button */
+.btn-home {
+  display: inline-block;
+  background-color: #b595d1; 
+  color: var(--bg-primary); 
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: var(--font-heading);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  border: 1px solid #b595d1; 
+}
+
+.btn-home:hover {
+  background-color: #ffffff; 
+  color: var(--bg-primary);
+  border-color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(181, 149, 209, 0.4);
+}
+
+/* Content from _index.md */
+.section-intro {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  background: rgba(147, 103, 185, 0.15);
+  border-left: 3px solid var(--accent-muted);
+  border-radius: 0 6px 6px 0;
+  color: var(--text-primary);
+  line-height: 1.6;
+}
+
+.section-intro h2,
+.section-intro h3,
+.section-intro h4,
+.section-intro h5,
+.section-intro h6 {
+  margin-top: 0;
+  color: var(--accent-muted);
+}
+
+.section-intro p {
+  margin-bottom: 1rem;
+}
+
+.section-intro img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  border: 1px solid var(--border-color);
+}
+
+.collection-card {
+  background: rgba(147, 103, 185, 0.15);
+  border: 1px solid var(--border-color);
+  padding: 2rem;
+  border-radius: 6px;
+  transition: transform 0.2s, border-color 0.2s;
+  text-align: center;
+}
+
+.collection-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent-muted);
+  box-shadow: 0 0 20px rgba(147, 103, 185, 0.15);
+}
+
+.collection-card h3 a {
+  color: var(--text-primary);
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+}
+
+.collection-card p {
+  color: var(--text-secondary);
+  margin: 1rem 0;
+}
+
+/* Accessibility Recommendations */
+
+/* Skip link - hidden until in focused mode */
+.skip-link {
+  position: fixed;
+  top: -50px;
+  left: 0;
+  background: var(--accent-bright);
+  color: var(--bg-primary);
+  padding: 1rem 1.5rem;
+  z-index: 1000;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 0 0 4px 0;
+  transition: top 0.2s ease;
+}
+
+.skip-link:focus {
+  top: 0;
+  outline: 2px solid var(--text-primary);
+  outline-offset: 2px;
+}
+
+/* Keyboard focus */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--accent-bright);
+  outline-offset: 2px;
+}
+
+/* Removes outline offset for inline elements */
+.post-card h2 a:focus-visible,
+.tag:focus-visible,
+.nav-list a:focus-visible {
+  outline-offset: 0;
+}
+
+/* Respects user's animation preferences */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Tag contrast */
+.tag {
+  color: var(--accent-bright);
+  font-weight: 500;
+}
+
+/* Collections styling */
+.list-section-lists .post-card {
+  background-color: var(--bg-collection-card);
+  border: 1px solid var(--border-collection-card);
+}
+
+.list-section-lists .post-card:hover {
+  border-color: var(--accent-bright);
+  transform: translateY(-4px);
+}
+
+.list-section-lists .post-card h2 a {
+  color: var(--text-primary);
+}
+
+.list-section-lists .post-card h2 a:hover {
+  color: var(--accent-bright);
+}
+
+.list-section-lists .post-meta time {
+  color: var(--text-secondary);
+}
+
+.list-section-lists .post-excerpt {
+  color: var(--text-secondary);
+}
+
+.list-section-lists .read-more {
+  color: var(--accent-muted);
+}
+
+/* Flutterlings styling */
+
+.list-section-writing .post-card {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+}
+
+.list-section-writing .post-card:hover {
+  border-color: var(--accent-muted);
+  transform: translateY(-4px);
+}
+
+.list-section-writing .post-card h2 a {
+  color: var(--text-primary);
+}
+
+.list-section-writing .post-card h2 a:hover {
+  color: var(--accent-bright);
+}
+
+.list-section-writing .post-meta time {
+  color: var(--text-secondary);
+}
+
+.list-section-writing .post-excerpt {
+  color: var(--text-secondary);
+}
+
+.list-section-writing .read-more {
+  color: var(--accent-bright);
+}
+
+/* Poetry writing stanza formatting */
+
+.poem-stanza {
+  white-space: pre-wrap;
+  line-height: 1.6;
+  margin-bottom: 0.75rem;
+  margin-top: 0.75rem;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: var(--font-body);
+  text-align: left;
+  padding: 0;
+}
+
+.poem-stanza:first-child {
+  margin-top: 0;
+}
