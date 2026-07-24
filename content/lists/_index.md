@@ -2,7 +2,6 @@
 title: "Collections"
 description: "Curated lists of things that bring joy, comfort, and inspiration"
 type: "lists"
-layout: "list"
 ---
 
 ## Welcome to Collections

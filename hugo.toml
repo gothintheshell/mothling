@@ -1,6 +1,5 @@
 baseURL = 'https://astral-snails.local/' # Change this to your real domain later
 title = "mothling?!"
-theme = ""
 
 paginate = 5
 
@@ -36,19 +35,6 @@ paginate = 5
 [params]
   description = "A digital hollow filled with dreams and flutterings drawn to the light"
   author = "mothling"
-  
-  [params.colors]
-    bg_primary = "#242629"
-    bg_secondary = "#2d2d2d"
-    text_primary = "#cfbbe3"
-    text_secondary = "#9e8fb5"
-    accent_muted = "#5c4066"
-    accent_bright = "#8a6fa0"
-    border_color = "#444444"
-
-  [params.typography]
-    font_body = '"Roboto Mono", monospace'
-    font_heading = '"Bitcount Prop", monospace' #NEED TO UPDATE
     
   [params.features]
     show_hero = true

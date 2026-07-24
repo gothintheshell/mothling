@@ -2,7 +2,6 @@
 title: "Flutterlings"
 description: "Poetry and prose from quiet corners of my mind"
 type: "writing"
-layout: "list"
 ---
 
 ## Welcome to Flutterlings
