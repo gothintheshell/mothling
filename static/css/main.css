@@ -6,6 +6,7 @@
   --text-secondary: #9e8fb5;
   --accent-muted: #b99bd8;
   --accent-bright: #d4c4f0;
+  --accent-link: #e8e8ff;
   --border-color: #8c8c8c;
   
   --font-heading: 'Emilys Candy', 'Brad Hand', cursive;
@@ -475,4 +476,24 @@ button:focus-visible {
 
 .poem-stanza:first-child {
   margin-top: 0;
+}
+
+/* Blog post links */
+.content-wrapper a,
+.post-content a,
+.article-body a {
+  color: var(--accent-link);
+  text-decoration: underline;
+  text-decoration-color: var(--accent-muted);
+  transition: color 0.2s ease, text-decoration-color 0.2s ease;
+}
+
+.content-wrapper a:hover {
+  text-shadow: 0 0 8px rgba(185, 155, 216, 0.8);
+}
+
+.post-content a:hover,
+.article-body a:hover {
+  color: var(--accent-muted);
+  text-decoration-color: var(--accent-bright);
 }

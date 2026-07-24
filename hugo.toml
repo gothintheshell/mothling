@@ -33,7 +33,7 @@ paginate = 5
     weight = 40
 
 [params]
-  description = "A digital hollow filled with dreams and flutterings drawn to the light"
+  description = "A digital hollow filled with dreams and flutterings which are drawn to the light"
   author = "mothling"
     
   [params.features]
