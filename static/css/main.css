@@ -497,3 +497,12 @@ button:focus-visible {
   color: var(--accent-muted);
   text-decoration-color: var(--accent-bright);
 }
+
+@media (max-width: 768px) {
+  .post-card img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+

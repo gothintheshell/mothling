@@ -5,7 +5,7 @@ tags: ["vampires", "gothic summer", "film", "reads"]
 draft: false
 ---
 
-![Wild strawberry bush surrounded by pink garden roses, small white strawberry buds and leafy green foliage.](roses-and-strawberries.jpg)
+![Wild strawberry bush surrounded by pink garden roses, small white strawberry buds and leafy green foliage.](/images/roses-and-strawberries.jpg)
 
 # This is a test of the emergency Summer gothcasting system. 
 
