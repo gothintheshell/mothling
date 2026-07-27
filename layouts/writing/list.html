@@ -1,0 +1,49 @@
+{{ define "main" }}
+
+<section class="hero-writing">
+  <img src="/images/faded-rose.jpg"
+       alt="A faded and slightly wilted purple rose"
+       class="hero-writing-bg">
+
+  <div class="hero-writing-overlay"></div>
+
+  <div class="hero-writing-content">
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}
+      <p>{{ . }}</p>
+    {{ end }}
+  </div>
+</section>
+
+<section class="list-section-{{ .Type }}">
+    <article class="content-wrapper">
+
+      <div class="post-list">
+        {{ range .Pages }}
+          <article class="post-card">
+            <header class="post-meta">
+              <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 January 2006" }}</time>
+            </header>
+            
+            <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+            
+            <div class="post-excerpt">
+              {{ .Summary }}
+              {{ if .Truncated }}
+                <a href="{{ .RelPermalink }}" class="read-more">Read Entry →</a>
+              {{ end }}
+            </div>
+
+            {{ if .Params.tags }}
+              <div class="post-tags">
+                {{ range .Params.tags }}
+                  <a href="/tags/{{ . | urlize }}/" class="tag">#{{ . }}</a>
+                {{ end }}
+              </div>
+            {{ end }}
+          </article>
+        {{ end }}
+      </div>
+    </article>
+  </section>
+{{ end }}
