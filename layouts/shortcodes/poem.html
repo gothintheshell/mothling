@@ -1,3 +1,7 @@
-<div class="poetry-block {{ with .Get "style" }}{{ . }}{{ end }}">
-{{ .Inner | safeHTML }}
-</div>
+{{ $content := .Inner }}
+{{ $lines := split $content "\n\n" }}
+{{ range $lines }}
+{{ if ne (trim . " ") "" }}
+<div class="poem-stanza">{{ . }}</div>
+{{ end }}
+{{ end }}

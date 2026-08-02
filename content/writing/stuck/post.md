@@ -13,7 +13,6 @@ the backlog of emotions, wanting a release
 and
 the fear of what happens when I do.
 
-
 Something draws me in,
 it’s pulling,
 and here we are. 

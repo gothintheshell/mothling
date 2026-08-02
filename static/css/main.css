@@ -595,37 +595,3 @@ button:focus-visible {
     font-size: 1rem;
   }
 }
-
-/* Poetry blocks */
-.poetry-block {
-  white-space: pre-wrap;
-  word-break: break-word;
-  font-family: inherit;
-  margin: 2rem 0;
-  padding: 1rem;
-  line-height: 1.6;
-}
-
-.poetry-block.left {
-  text-align: left;
-}
-
-.poetry-block.center {
-  text-align: center;
-}
-
-.poetry-block.right {
-  text-align: right;
-}
-
-.poetry-block-indent {
-  padding-left: 2rem;
-}
-
-/* Mobile adjustment */
-@media (max-width: 600px) {
-  .poetry-block {
-    padding: 0.5rem;
-    margin: 1rem 0;
-  }
-}
