@@ -481,7 +481,7 @@ button:focus-visible {
 .poem-stanza {
   white-space: pre-wrap;
   line-height: 1.6;
-  margin-bottom: 0.75rem;
+  margin-bottom: 1.5rem;
   margin-top: 0.75rem;
   max-width: 400px;
   margin-left: auto;
