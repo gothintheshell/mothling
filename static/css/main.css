@@ -9,12 +9,29 @@
   --accent-link: #e8e8ff;
   --border-color: #8c8c8c;
   
-  --font-heading: 'Emilys Candy', 'Brad Hand', cursive;
+  --font-heading: 'Fraunces', 'Palatino Linotype', 'Book Antiqua', serif;
   --font-body: 'Roboto Mono', 'Courier New', monospace;
   --font-accent: 'Oi', 'Arial Black', sans-serif;
 
   --bg-collection-card: rgba(109, 76, 255, 0.12);
   --border-collection-card: rgba(185, 155, 216, 0.4);
+}
+
+/* Light mode for users who opt-in at system level */
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-primary: #faf7fc;
+    --bg-secondary: #f4eff8;
+    --text-primary: #3c2a4d;
+    --text-secondary: #6b5a7a;
+    --accent-muted: #8c6db5;
+    --accent-bright: #b99bd8;
+    --accent-link: #6d4aff;
+    --border-color: #dcd4e8;
+    
+    --bg-collection-card: rgba(109, 76, 255, 0.08);
+    --border-collection-card: rgba(147, 103, 185, 0.4);
+  }
 }
 
 * {
@@ -576,5 +593,39 @@ button:focus-visible {
 
   .hero-writing-content p {
     font-size: 1rem;
+  }
+}
+
+/* Poetry blocks */
+.poetry-block {
+  white-space: pre-wrap;
+  word-break: break-word;
+  font-family: inherit;
+  margin: 2rem 0;
+  padding: 1rem;
+  line-height: 1.6;
+}
+
+.poetry-block.left {
+  text-align: left;
+}
+
+.poetry-block.center {
+  text-align: center;
+}
+
+.poetry-block.right {
+  text-align: right;
+}
+
+.poetry-block-indent {
+  padding-left: 2rem;
+}
+
+/* Mobile adjustment */
+@media (max-width: 600px) {
+  .poetry-block {
+    padding: 0.5rem;
+    margin: 1rem 0;
   }
 }

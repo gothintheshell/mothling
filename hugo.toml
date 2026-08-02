@@ -1,4 +1,4 @@
-baseURL = 'https://astral-snails.local/' # Change this to your real domain later
+baseURL = 'https://mothling-space/'
 title = "mothling?!"
 
 paginate = 5
@@ -74,3 +74,8 @@ paginate = 5
 
   [services.x]
     disableInlineCSS = true
+
+[sitemap]
+  changefreq = "monthly"
+  filename = "sitemap.xml"
+  priority = 0.5

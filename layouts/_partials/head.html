@@ -18,11 +18,12 @@
   }
 
   @font-face {
-    font-family: 'Emilys Candy';
-    src: url('/fonts/emilys-candy.woff2') format('woff2');
-    font-weight: 400;
+    font-family: 'Fraunces';
+    src: url('/fonts/fraunces-variable.woff2') format('woff2');
+    font-weight: 100 900;
     font-style: normal;
-    font-display: swap;
+    font-display: swap; /* Prevents invisible text while loading */
+    font-named-instance: 'Regular';
   }
 
   @font-face {
@@ -31,7 +32,7 @@
     font-weight: 400;
     font-style: normal;
     font-display: swap;
-}
+  }
 
   @font-face {
     font-family: 'VT323';
@@ -41,3 +42,7 @@
     font-display: swap;
   }
 </style>
+
+<!-- No AI training signals -->
+<meta name="robots" content="noai, noimageai">
+<meta name="googlebot" content="noai">

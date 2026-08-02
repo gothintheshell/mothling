@@ -2,10 +2,13 @@
   <article class="content-wrapper">
     <header class="page-header">
       <h1>{{ .Title }}</h1>
-      {{ if .Lastmod }}
-        <p class="meta">Last Updated: {{ .Lastmod.Format "2 January 2006" }}</p>
-      {{ else if .Date }}
-        <p class="meta">Published: {{ .Date.Format "2 January 2006" }}</p>
+      
+      {{ if not .Params.hide_metadata }}
+        {{ if .Lastmod }}
+          <p class="meta">Last Updated: {{ .Lastmod.Format "2 January 2006" }}</p>
+        {{ else if .Date }}
+          <p class="meta">Published: {{ .Date.Format "2 January 2006" }}</p>
+        {{ end }}
       {{ end }}
     </header>
 
@@ -16,7 +19,6 @@
     {{ if .Params.tags }}
       <div class="post-tags">
         {{ range .Params.tags }}
-          <!-- Fixed: Removed relLangSlug, used direct path -->
           <a href="/tags/{{ . | urlize }}/" class="tag">#{{ . }}</a>
         {{ end }}
       </div>
