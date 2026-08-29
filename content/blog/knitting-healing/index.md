@@ -7,7 +7,7 @@ draft: false
 
 Everything heals through knitting.
 
-Whether I have been:
+Whether I have been:   
 Supporting my mom and sitting in waiting rooms during her previous cancer surgeries,
 Pouring my appreciation and recognition of close friendships into a gift they can wear,
 Getting over past relationships,
