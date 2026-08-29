@@ -495,7 +495,17 @@ button:focus-visible {
   margin-top: 0;
 }
 
-/* Blog post links */
+/* Blog post content */
+
+.page-content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 2rem auto;
+  border-radius: 4px;
+  border: 1px solid var(--border-color);
+}
+
 .content-wrapper a,
 .post-content a,
 .article-body a {
