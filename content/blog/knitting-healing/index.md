@@ -8,11 +8,11 @@ draft: false
 Everything heals through knitting.
 
 Whether I have been:   
-Supporting my mom and sitting in waiting rooms during her previous cancer surgeries,
-Pouring my appreciation and recognition of close friendships into a gift they can wear,
-Getting over past relationships,
-Sitting calmly, keeping my dad company during hospice duty, or
-Bringing a bit of comfort and warmth to my aunt during her chemo treatments,
+Supporting my mom and sitting in waiting rooms during her previous cancer surgeries,  
+Pouring my appreciation and recognition of close friendships into a gift they can wear,  
+Getting over past relationships,  
+Sitting calmly, keeping my dad company during hospice duty, or  
+Bringing a bit of comfort and warmth to my aunt during her chemo treatments,  
 knitting has always been there.
 
 If I have made something for you, I care about you. ***I may even love you.***
