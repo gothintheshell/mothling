@@ -28,13 +28,9 @@ paginate = 5
     pageRef = "/blog"
     weight = 20
   [[menus.main]]
-    name = "Collections"
-    pageRef = "/lists"
-    weight = 30
-  [[menus.main]]
     name = "Flutterlings"
     pageRef = "/writing"
-    weight = 40
+    weight = 30
 
 [params]
   description = "A digital hollow filled with dreams and flutterings which are drawn to the light"

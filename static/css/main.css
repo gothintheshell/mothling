@@ -413,37 +413,6 @@ button:focus-visible {
   font-weight: 500;
 }
 
-/* Collections styling */
-.list-section-lists .post-card {
-  background-color: var(--bg-collection-card);
-  border: 1px solid var(--border-collection-card);
-}
-
-.list-section-lists .post-card:hover {
-  border-color: var(--accent-bright);
-  transform: translateY(-4px);
-}
-
-.list-section-lists .post-card h2 a {
-  color: var(--text-primary);
-}
-
-.list-section-lists .post-card h2 a:hover {
-  color: var(--accent-bright);
-}
-
-.list-section-lists .post-meta time {
-  color: var(--text-secondary);
-}
-
-.list-section-lists .post-excerpt {
-  color: var(--text-secondary);
-}
-
-.list-section-lists .read-more {
-  color: var(--accent-muted);
-}
-
 /* Flutterlings styling */
 
 .list-section-writing .post-card {

@@ -1,8 +1,6 @@
 ---
 title: "Now Listening: August 2026 Recap"
 date: 2026-09-06
-type: "lists"
-layout: "single"
 tags: ["music", "now-playing"]
 draft: false
 ---

@@ -1,8 +1,6 @@
 ---
 title: "Now Listening: July 2026 Recap"
 date: 2026-08-02
-type: "lists"
-layout: "single"
 tags: ["music", "now-playing", "jazz"]
 draft: false
 ---
